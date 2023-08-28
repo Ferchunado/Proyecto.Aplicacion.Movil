@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MiEstiloDeTexto">
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:fontFamily">@font/mi_font</item>
+    </style>
+
+</resources>

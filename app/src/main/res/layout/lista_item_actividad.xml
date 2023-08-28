@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/viewtitulo_Tarea"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:drawableStart="@drawable/baseline_assignment_24"
+                android:drawablePadding="15sp"
+                android:padding="15sp"/>
+
+            <TextView
+                android:id="@+id/viewFechaLimite"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:drawableStart="@drawable/baseline_date_range_24"
+                android:drawablePadding="15sp"
+                android:padding="15sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/viewPrioridad"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:drawableStart="@drawable/baseline_priority_high_24"
+                android:drawablePadding="15sp"
+                android:padding="15sp"/>
+
+            <TextView
+                android:id="@+id/viewResponsable"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15sp"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:textSize="22sp"
+                android:padding="15sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="360sp"
+            android:layout_height="3sp"
+            android:background="@drawable/border_bottom"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nuevaTarea"
+    tools:ignore="ExtraText">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="182dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Nueva Tarea"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        app:fontFamily="@font/mi_font_bold"
+        />
+
+    <EditText
+        android:id="@+id/eT_Titulo_Tarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="564dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Titulo"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:fontFamily="@font/mi_font_medium"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"
+        />
+
+    <EditText
+        android:id="@+id/eT_Fecha_Limite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Seleccionar Fecha"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eT_Descripcion"
+        app:fontFamily="@font/mi_font_medium"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/eT_Prioridad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Prioridad"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eT_Fecha_Limite"
+        app:fontFamily="@font/mi_font_medium"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/eT_Responsable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Responsable"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eT_Prioridad"
+        app:fontFamily="@font/mi_font_medium"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/btnCrear_Tarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="104dp"
+        android:onClick="registrarTarea"
+        android:text="Crear Tarea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:fontFamily="@font/mi_font_medium"
+        android:background="@drawable/edittext_border"
+        />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:onClick="regresarHome"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCrear_Tarea"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844"
+        app:fontFamily="@font/mi_font_medium"
+        android:background="@drawable/edittext_border"/>
+
+    <DatePicker
+        android:id="@+id/datePicker_Fecha"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        app:fontFamily="@font/mi_font_medium"/>
+
+    <EditText
+        android:id="@+id/eT_Descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Descipcion"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eT_Titulo_Tarea"
+        app:fontFamily="@font/mi_font_medium"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"/>
+    <![CDATA[
+
+
+
+
+
+    />
+
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>

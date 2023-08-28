@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".verActivity">
+
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:id="@+id/viewTitulo_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titulo"
+        app:fontFamily="@font/mi_font_bold"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+         />
+
+    <EditText
+        android:id="@+id/editarTarea_Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/mi_font_medium"
+        android:ems="10"
+        android:labelFor="@+id/viewTitulo_editar"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/viewFecha_limite_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/mi_font_bold"
+        android:hint="Fecha Limite"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        />
+    <EditText
+        android:id="@+id/editarTarea_Fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/mi_font_medium"
+        android:ems="10"
+        android:hint="Fecha"
+        android:clickable="true"
+        android:inputType="date"
+        android:labelFor="@+id/viewFecha_limite_editar"
+        android:textSize="18sp"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"
+        android:layout_marginHorizontal="15dp"
+
+        />
+
+    <TextView
+        android:id="@+id/viewPrioridad_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/mi_font_bold"
+        android:hint="Prioridad"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        />
+    <EditText
+        android:id="@+id/editarTarea_Prioridad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/mi_font_medium"
+        android:ems="10"
+        android:labelFor="@+id/viewPrioridad_editar"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"
+        android:layout_marginHorizontal="15dp"/>
+
+
+    <TextView
+        android:id="@+id/viewResponsable_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/mi_font_bold"
+        android:hint="Responsable"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        />
+    <EditText
+        android:id="@+id/editarTarea_Responsable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/mi_font_medium"
+        android:ems="10"
+        android:labelFor="@+id/viewResponsable_editar"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"
+        android:layout_marginHorizontal="15dp"/>
+    <TextView
+        android:id="@+id/viewDescripcion_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/mi_font_bold"
+        android:hint="Descripcion"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        />
+    <EditText
+        android:id="@+id/editarTarea_Descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/mi_font_medium"
+        android:ems="10"
+        android:labelFor="@+id/viewDescripcion_editar"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <Button
+        android:id="@+id/editarTarea_boton_actualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Actualizar"
+        android:background="@drawable/edittext_border"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="5dp"/>
+
+
+    <DatePicker
+        android:id="@+id/datePicker_Fecha"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/edittext_border"
+        android:text="Volver Menu"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:dividerPadding="16dp"
+        android:gravity="center">
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_edit"
+            android:layout_marginEnd="20dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@drawable/baseline_delete_24" />
+    </LinearLayout>
+
+</LinearLayout>
